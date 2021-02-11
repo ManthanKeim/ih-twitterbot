@@ -4,9 +4,7 @@ Retweets the latest tweet using the the configured hashtag.
 
 It attempts to retweet once at the set interval.
 
-### Install twit
-
-Install twit while in the ./bot/ folder. The library that lets us talk to Twitter.
+### Install
 
 ```bash
 npm i --save
