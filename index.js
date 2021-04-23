@@ -1,7 +1,8 @@
 const Twit = require("twit");
 const config = require('./config')
 const twit = new Twit(config.twit)
-
+var http = require('http')
+var server = http.createServer().listen(process.env.PORT || 5000)
 
 const HASHTAG = config.hashtag
 const INTERVAL = config.interval
