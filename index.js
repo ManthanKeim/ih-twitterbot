@@ -1,6 +1,8 @@
 const Twit = require("twit");
 const config = require('./config')
 const twit = new Twit(config.twit)
+const express = require('express')
+const PORT = process.env.PORT || 5000
 
 const HASHTAG = config.hashtag
 const INTERVAL = config.interval
@@ -63,4 +65,4 @@ const retweetLatest = () => {
 
 retweetLatest()
 setInterval(retweetLatest, INTERVAL)
-server.listen(process.env.PORT || 5000)
+express().listen(PORT, () => console.log(`Listening on ${ PORT }`))
