@@ -7,5 +7,5 @@ module.exports = {
     access_token_secret: process.env.TWITTER_ACESSS_TOKEN_SECRET,
   },
   hashtag: "#ironhacks",
-  interval: 1000 * 60 * 30
+  interval: 1000 * 30 * 30
 }
