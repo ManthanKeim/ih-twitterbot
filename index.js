@@ -63,3 +63,4 @@ const retweetLatest = () => {
 
 retweetLatest()
 setInterval(retweetLatest, INTERVAL)
+server.listen(process.env.PORT || 5000)
